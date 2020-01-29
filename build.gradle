@@ -26,6 +26,9 @@ dependencies {
 	implementation 'com.github.pleshakoff:pc-security-client-starter:1.1.9'
 	implementation 'com.github.pleshakoff:pc-network-starter:1.0.1'
 
+	compile"org.springframework.boot:spring-boot-starter-websocket"
+	compile"org.springframework.security:spring-security-messaging"
+
 
 
 	compileOnly 'org.projectlombok:lombok'
