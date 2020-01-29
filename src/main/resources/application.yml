@@ -1,0 +1,31 @@
+server:
+  port : 8087
+  servlet:
+    context-path: /api/${parcom.api.version}
+
+parcom:
+  kafka:
+    bootstrap-address: pc-kafka:9092
+    topic:
+      notificationAgent: notificationAgent
+    group:
+      notifierAgent: notifierAgentWebsocket
+  api:
+    version: v1
+  services:
+    -
+      name: user-cache
+      host: pc-user-cache
+      port: 8086
+      version: v1
+spring:
+  application.name: pc-notifier_agent_websocket
+  hateoas:
+    use-hal-as-default-json-media-type: false
+management:
+  endpoints:
+    metrics:
+      enabled: true
+    web:
+      exposure:
+        include: "health,prometheus"
