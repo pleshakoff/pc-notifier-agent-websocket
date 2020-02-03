@@ -4,6 +4,12 @@ server:
     context-path: /api/${parcom.api.version}
 
 parcom:
+  security:
+    websocket:
+      timeout: 2
+    permitted:
+      -
+        /pusher/**
   kafka:
     bootstrap-address: pc-kafka:9092
     topic:

@@ -19,16 +19,19 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.kafka:spring-kafka'
 
+
 	implementation  'io.springfox:springfox-swagger-ui:2.9.2'
 	implementation  'io.springfox:springfox-swagger2:2.9.2'
 	implementation 'io.micrometer:micrometer-registry-prometheus'
 
+
 	implementation 'com.github.pleshakoff:pc-security-client-starter:1.1.9'
 	implementation 'com.github.pleshakoff:pc-network-starter:1.0.1'
+	implementation 'com.github.pleshakoff:pc-exceptions-starter:1.1.5'
 
-	compile"org.springframework.boot:spring-boot-starter-websocket"
-	compile"org.springframework.security:spring-security-messaging"
+	implementation"org.springframework.boot:spring-boot-starter-websocket"
 
+	
 
 
 	compileOnly 'org.projectlombok:lombok'
